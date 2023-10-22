@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer sitio web</title>
     <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
 </head>
+
 <body>
     <h1>Mi primer sitio web con HTML</h1>
-    <p>Soy estudiante de jovenes creaTIvos, estoy aprendiendo desarrollo web 
-        frontend y estoy realizando esta pagina para practicar HTML que es 
+    <p>Soy estudiante de jovenes creaTIvos, estoy aprendiendo desarrollo web
+        frontend y estoy realizando esta pagina para practicar HTML que es
         el primer tema que estoy aprendiendo.
     </p>
 
@@ -62,5 +64,27 @@
             </tr>
         </tfoot>
     </table>
+
+    <form>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="inicia con mayusculas" required>
+        </div>
+        <div>
+            <label for="presentacion">Presentacion</label>
+            <textarea name="presentacion" id="presentacion" cols="30" rows="10"
+            placeholder="Escribe una breve presentacion tuya"></textarea>
+        </div>
+        <div>
+            <select name="genero" id="genero">
+                <option value="" selected disabled>Selecciona tu identidad de genero</option>
+                <option value="Fem">Mujer</option>
+                <option value="Masc">Hombre</option>
+                <option value="@">Fluido o prefiero no decirlo</option>
+            </select>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
+
 </html>
